@@ -1,16 +1,17 @@
 import * as React from 'react';
 import { Text, SafeAreaView, StyleSheet,TextInput,TouchableOpacity,View } from 'react-native';
+import styles from './styles';
+import CustomFonts from './assets/fonts/CustomFonts';
 
 
-export default function App() {
+export default function Login() {
   const [number1, onChangeNumber1] = React.useState(null);
   const [number2, onChangeNumber2] = React.useState(null);
   
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{fontFamily:'Copperplate',alignItems:'center',
-    padding:30,fontSize:25,}}>Sign In With Email</Text>
+    <CustomFonts text="Sign In With Email" marginTop={100} fontSize={25} />
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber1}
@@ -38,46 +39,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    alignItems:'center',
-    position:'absolute',
-    marginTop:100,
-  },
-  input: {
-    height: 60,
-    width:300,
-    margin: 10,
-    borderWidth: 3,
-    padding: 20,
-  },
-  button1: {
-    alignItems: "center",
-    backgroundColor: "#AE327D",
-    padding: 10,
-    width:300,
-    height:50,
-    borderWidth:3,
-    borderTopLeftRadius:20,
-    borderTopRightRadius:20,
-    borderBottomRightRadius:20,
-    borderBottomLeftRadius:20,
-    margin:20
-  },
-  button2: {
-    alignItems: "center",
-    justifyContent:'center',
-    padding: 10,
-    width:300,
-    height:50,
-    borderWidth:3,
-    borderTopLeftRadius:20,
-    borderTopRightRadius:20,
-    borderBottomRightRadius:20,
-    borderBottomLeftRadius:20,
-    margin:30
-  },
-  
-});
