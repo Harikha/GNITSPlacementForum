@@ -7,6 +7,7 @@ SplashScreen.preventAutoHideAsync();
 export default function CustomFonts(props) {
   const [fontsLoaded] = useFonts({
     'LibreBaskerville-Bold': require('./LibreBaskerville-Bold.ttf'),
+    'LibreBaskerville-Regular': require('./LibreBaskerville-Regular.ttf'),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -21,15 +22,15 @@ export default function CustomFonts(props) {
   
   return(
   <Text style={{
-    fontFamily:'LibreBaskerville-Bold',
+    fontFamily:props.fontFamily||'LibreBaskerville-Bold',
     fontSize:props.fontSize||20,
     color:props.color||'black',
     marginTop:props.marginTop||0,
     backgroundColor:props.backgroundColor||'white',
-    padding:props.padding||15,
+    padding:props.padding||0,
     textAlign:props.textAlign||'center',
     borderRadius:props.borderRadius||20,
-
+    width:props.width||'100%',
   }} >{props.text}</Text>
   );
 }

@@ -13,17 +13,17 @@ function HomeScreen({navigation}){
         <ScrollView style={{backgroundColor:'#30E3CA'}    }>
         
         <TouchableOpacity style={styles.border}>
-            <Image source={require('./assets/interviewexp.webp')} style={styles.img} />
-    <CustomFonts text="Interview Experiences"/>
+            <Image source={require('./assets/images/interviewexp.webp')} style={styles.img} />
+    <CustomFonts text="Interview Experiences" padding={15}/>
         </TouchableOpacity>
         <TouchableOpacity style={styles.border} >
-            <Image source={require('./assets/assessment.webp')} style={styles.img}/>
-            <CustomFonts text="Company wise Assessment"/>
+            <Image source={require('./assets/images/assessment.webp')} style={styles.img}/>
+            <CustomFonts text="Company wise Assessment" padding={15}/>
             
         </TouchableOpacity>
         <TouchableOpacity style={styles.border}>
-            <Image source={require('./assets/mockinterv.webp')} style={styles.img}/>
-             <CustomFonts text="Mock Interview"/>
+            <Image source={require('./assets/images/mockinterv.webp')} style={styles.img}/>
+             <CustomFonts text="Mock Interview" padding={15}/>
         </TouchableOpacity> 
         </ScrollView>
     )

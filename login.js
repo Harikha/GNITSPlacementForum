@@ -11,7 +11,7 @@ export default function Login() {
 
   return (
     <SafeAreaView style={styles.container}>
-    <CustomFonts text="Sign In With Email" marginTop={100} fontSize={25} />
+    <CustomFonts text="Sign In With Email" marginTop={100} fontSize={25} padding={15}/>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber1}

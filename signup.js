@@ -14,7 +14,7 @@ export default function SignUp() {
   return (
     
     <SafeAreaView style={styles.container}>
-      <CustomFonts text="Create An Account" marginTop={100} fontSize={20} />
+      <CustomFonts text="Create An Account" marginTop={100} fontSize={20} padding={15}/>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber1}

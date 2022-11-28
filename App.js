@@ -4,10 +4,12 @@ import Login from './login';
 import SignUp from './signup';
 import TabNav from './TabNav';
 import CustomFonts from './assets/fonts/CustomFonts';
+import ImagePickerExample from './ImagePicker';
+import UploadFile from './UploadFile';
 
 export default function App() {
   return (
-  <Text>Hello gsfs</Text>
+<TabNav/>
   );
 }
 
