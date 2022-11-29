@@ -1,16 +1,17 @@
 import * as React from 'react';
 import { Text, SafeAreaView, StyleSheet,TextInput,TouchableOpacity, } from 'react-native';
 import CustomFonts from './assets/fonts/CustomFonts';
-
+import {MaterialCommunityIcons} from '@expo/vector-icons'; 
 import styles from './styles';
 
-export default function SignUp() {
+function SignUp() {
   const [number1, onChangeNumber1] = React.useState(null);
   const [number2, onChangeNumber2] = React.useState(null);
   const [number3, onChangeNumber3] = React.useState(null);
   const [number4, onChangeNumber4] = React.useState(null);
   const [number5, onChangeNumber5] = React.useState(null);
-  
+  const[show,setShow]=React.useState(false);
+  const[visible,setVisible]=React.useState(true);
   return (
     
     <SafeAreaView style={styles.container}>
@@ -37,8 +38,12 @@ export default function SignUp() {
         style={styles.input}
         onChangeText={onChangeNumber4}
         value={number4}
+        secureTextEntry={visible}
         placeholder="Password"
       />
+      <TouchableOpacity style={styles.btn} onPress={()=>{
+        setVisible(!visible)
+        setShow(!show)}} ><MaterialCommunityIcons name={show===false?'eye-outline':'eye-off-outline'} size={22} /></TouchableOpacity> 
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber5}
@@ -61,3 +66,4 @@ export default function SignUp() {
     </SafeAreaView>
   );
 }
+export default SignUp;
