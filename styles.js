@@ -83,7 +83,6 @@ const styles=StyleSheet.create({
         borderRadius:20,
         color:'white',
         justifyContent:'center',
-        alignItems:'center',
       },
       RedButton:{
         alignItems: "center",
@@ -95,7 +94,6 @@ const styles=StyleSheet.create({
         borderRadius:20,
         color:'white',
         justifyContent:'center',
-        alignItems:'center',
 
       },
       GrayButton:{
@@ -108,8 +106,6 @@ const styles=StyleSheet.create({
         borderRadius:15,
         color:'white',
         justifyContent:'center',
-        alignItems:'center',
-
       },
       textSeperator:{
         marginBottom:8,
