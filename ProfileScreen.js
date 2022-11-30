@@ -1,12 +1,19 @@
-import React from "react";
+import {React,useState} from "react";
 import {Image, Text,ScrollView, TextInput, View,Pressable} from 'react-native';
 import CustomFonts from "./assets/fonts/CustomFonts";
 import ImagePickerExample from "./ImagePicker";
 import styles from './styles';
 import UploadFile from "./UploadFile";
 
+import RadioForm from 'react-native-simple-radio-button';
+
 
 export default function ProfileScreen({navigation}){
+  const [chosenOption, setChosenOption] = useState('no'); //will store our current user options
+  const options = [
+    { label: 'Yes', value: 'Yes' },
+    { label: 'No', value: 'No' },
+  ]; 
 
   return (
    <ScrollView style={{backgroundColor:'#30E3CA'}    }>
@@ -47,6 +54,18 @@ export default function ProfileScreen({navigation}){
         <CustomFonts text="Experience" fontSize={15} color="black" backgroundColor="null" padding={0}  borderRadius={0} width={97}/>
         <TextInput style={styles.input} placeholder="Enter your experience if available else NA" />
         </View>
+        <View style={styles.textSeperator}>
+        <CustomFonts text="Placed" fontSize={15} color="black" backgroundColor="null" padding={0}  borderRadius={0} width={97}/>
+        <RadioForm
+        radio_props={options}
+        initial={0} //initial value of this group
+        onPress={(value) => {
+          setChosenOption(value);
+        }} //if the user changes options, set the new value
+      />
+        </View>
+
+
         <View style={styles.textSeperator}>
         <CustomFonts text="Upload Resume" fontSize={15} color="black" backgroundColor="null" padding={0}  borderRadius={0} width={97}/>
         <UploadFile/>
