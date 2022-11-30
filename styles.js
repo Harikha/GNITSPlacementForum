@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native'
 const styles=StyleSheet.create({
     container: {
+        flex:1,
         justifyContent: 'center',
         backgroundColor: 'white',
         alignItems:'center',
@@ -19,7 +20,7 @@ const styles=StyleSheet.create({
       },
       button1: {
         alignItems: "center",
-        backgroundColor: "#AE327D",
+        backgroundColor: "#2BB789",
         padding: 15,
         width:300,
         height:50,
@@ -64,11 +65,9 @@ const styles=StyleSheet.create({
         borderRadius:120/2,
         margin:10,
         resizeMode:'cover',
-      
         justifyContent:'center',
         alignItems:'center',
         alignSelf:'center',
-       
         borderWidth:2,
         borderColor:'black',
 
