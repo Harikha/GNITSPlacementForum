@@ -151,21 +151,21 @@ const Inlinestyles = StyleSheet.create({
     alignItems: "center",
   },
 
-  headerStyle: {
-    fontSize: 20,
-    fontWeight: "600",
-    color: "#312921",
-    marginBottom: 10,
-  },
+//   headerStyle: {
+//     fontSize: 20,
+//     fontWeight: "600",
+//     color: "#312921",
+//     marginBottom: 10,
+//   },
 
-  htmlBoxStyle: {
-    height: 200,
-    width: 330,
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    padding: 20,
-    marginBottom: 10,
-  },
+//   htmlBoxStyle: {
+//     height: 200,
+//     width: 330,
+//     backgroundColor: "#fff",
+//     borderRadius: 10,
+//     padding: 20,
+//     marginBottom: 10,
+//   },
 
   richTextContainer: {
     display: "flex",
