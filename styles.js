@@ -200,7 +200,10 @@ const styles=StyleSheet.create({
     fontWeight: "600",
     color: "#312921",
   },
-      
+  btn:{
+    right:-100,
+    bottom:38
+  }  
      
 
 })
