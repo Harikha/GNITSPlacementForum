@@ -1,18 +1,19 @@
 import React from "react";
-import {Text,View,StyleSheet, Pressable} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import Ionicons from '@expo/vector-icons/Ionicons';
 import HomeScreen from "./HomeScreen";
-import styles from './styles';
 import ProfileScreen from "./ProfileScreen";
 import NotificationScreen from "./NotificationScreen";
 import ReadLaterScreen from "./ReadLaterScreen";
+
 const tab=createBottomTabNavigator();
+
 function TabNav()
 {
     return(
-        <NavigationContainer>
+        
           <tab.Navigator
 
           screenOptions={({route})=>({
@@ -46,7 +47,6 @@ function TabNav()
             <tab.Screen name="Notification" component={NotificationScreen}/>
             <tab.Screen name="Read Later" component={ReadLaterScreen}/>
           </tab.Navigator>
-        </NavigationContainer>
       )
 }
 export default TabNav;
