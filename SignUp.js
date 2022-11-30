@@ -51,7 +51,7 @@ const SignUp = (props)=> {
         placeholder="Roll Number"
       />
       <TouchableOpacity
-        style={styles.button1} 
+        style={styles.button1} onPress={() => props.navigation.navigate("Login")}
       >
         <Text style={{color:"white",}}>Sign Up</Text>
       </TouchableOpacity>
