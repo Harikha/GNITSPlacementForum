@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, SafeAreaView, StyleSheet,TextInput,TouchableOpacity,View } from 'react-native';
+import { Text, TextInput,TouchableOpacity,View } from 'react-native';
 import styles from './styles';
 import CustomFonts from './assets/fonts/CustomFonts';
 import {MaterialCommunityIcons} from '@expo/vector-icons'; 
@@ -12,6 +12,7 @@ const Login = (props)=> {
   const[visible,setVisible]=React.useState(true);
 
   return (
+    
     <View style={styles.container}>
     <CustomFonts text="Sign In With Email" marginTop={200} fontSize={25} padding={10}/>
       <TextInput
@@ -32,7 +33,7 @@ const Login = (props)=> {
         setShow(!show)}} ><MaterialCommunityIcons name={show===false?'eye-outline':'eye-off-outline'} size={22} /></TouchableOpacity> 
       
       <TouchableOpacity
-        style={styles.button1} 
+        style={styles.button1} onPress={() => props.navigation.navigate("TabNav")}
       >
         <Text style={{color:"white",}}>Login</Text>
       </TouchableOpacity>
@@ -41,6 +42,7 @@ const Login = (props)=> {
       >
         <Text >Need an account?</Text>
       </TouchableOpacity>
+
     </View>
   );
 }
