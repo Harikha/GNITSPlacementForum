@@ -7,20 +7,16 @@ import Home from './Home';
 import SignUp from './SignUp';
 import Login from './Login';
 import TabNav from './TabNav';
+import ReEnterEmail from './ReEnterEmail';
+import ResetPassword from './ResetPwd';
+import ConfirmSignUp from './ConfirmSignUp';
+import Navigation from './Navigation';
 
   const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={Home} /> 
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="TabNav" component={TabNav}/>
-      </Stack.Navigator>
-      
-    </NavigationContainer>
+    <Navigation/>
   );
 }
 

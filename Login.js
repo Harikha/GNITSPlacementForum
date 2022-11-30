@@ -3,14 +3,14 @@ import { Text, TextInput,TouchableOpacity,View } from 'react-native';
 import styles from './styles';
 import CustomFonts from './assets/fonts/CustomFonts';
 import {MaterialCommunityIcons} from '@expo/vector-icons'; 
-
-
+import { useNavigation } from '@react-navigation/native';
+import ReEnterEmail from './ReEnterEmail';
 const Login = (props)=> {
   const [number1, onChangeNumber1] = React.useState(null);
   const [number2, onChangeNumber2] = React.useState(null);
    const[show,setShow]=React.useState(false);
   const[visible,setVisible]=React.useState(true);
-
+const navigation = useNavigation();
   return (
     
     <View style={styles.container}>
@@ -38,9 +38,16 @@ const Login = (props)=> {
         <Text style={{color:"white",}}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity
+        style={{margin:10,}}
+        onPress={() => props.navigation.navigate("ReEnterEmail")}
+      >
+        <Text style={{color:"grey",}}>Forgot Password?</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
         style={styles.button2} onPress={() => props.navigation.navigate("SignUp")}
       >
         <Text >Need an account?</Text>
+        
       </TouchableOpacity>
 
     </View>

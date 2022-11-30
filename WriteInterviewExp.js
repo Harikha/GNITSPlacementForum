@@ -17,7 +17,7 @@ import {
 } from "react-native-pell-rich-editor";
 import ImagePickerExample from "./ImagePicker";
 import styles from "./styles";
-export default function App() {
+export default function WriteInterviewExp() {
   const richText = useRef();
   const [name, setName] = useState("");
   const [companyName, setCompanyName] = useState("");
@@ -50,6 +50,8 @@ export default function App() {
       setShowDescError(true);
     } else {
       // send data to your server!
+      console.log("submitContentHandle");
+      
     }
   };
 
@@ -191,7 +193,7 @@ const Inlinestyles = StyleSheet.create({
   },
 
   richTextToolbarStyle: {
-    backgroundColor: "#c6c3b3",
+    backgroundColor: "#2BB789",
     borderColor: "#c6c3b3",
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
@@ -204,7 +206,7 @@ const Inlinestyles = StyleSheet.create({
   },
 
   saveButtonStyle: {
-    backgroundColor: "#c6c3b3",
+    backgroundColor: "#2BB789",
     borderWidth: 1,
     borderColor: "#c6c3b3",
     borderRadius: 10,
