@@ -75,24 +75,29 @@ const styles=StyleSheet.create({
       GreenButton:{
         alignItems: "center",
         backgroundColor: "green",
-        padding: 15,
+        // padding: 15,
         width:90,
-        height:50,
+        // height:50,
         margin:6,
-        borderRadius:20,
+        // borderRadius:20,
         color:'white',
         justifyContent:'center',
+        padding:10,
+        borderRadius:10,
       },
       RedButton:{
         alignItems: "center",
         backgroundColor: "#FF0000",
-        padding: 15,
+        // padding: 15,
         width:90,
-        height:50,
+        // height:50,
         margin:6,
-        borderRadius:20,
+        // borderRadius:20,
         color:'white',
         justifyContent:'center',
+        
+    padding:10,
+    borderRadius:10,
 
       },
       GrayButton:{
@@ -202,7 +207,69 @@ const styles=StyleSheet.create({
   btn:{
     right:-100,
     bottom:38
-  }  
+  },
+  blogPreview:{
+    flexDirection:'row',
+    margin:10,
+    backgroundColor:'white',
+    borderRadius:10,
+    overflow:'hidden',
+    shadowColor:'black',
+    shadowOffset:{
+        width:0,
+        height:10,
+    },
+    shadowOpacity:0.25,
+    shadowRadius:3.5,
+    elevation:5,
+},
+blogPreview__imageContainer:{
+    flex:1,
+    backgroundColor:'black',
+    justifyContent:'center',
+    alignItems:'center',
+},
+blogPreview__textContainer:{
+    flex:2,
+    padding:10,
+},
+blogPreview__title:{
+    fontSize:18,
+    fontWeight:'bold',
+    marginBottom:5,
+},
+blogPreview__subtitle:{
+    fontSize:16,
+    marginBottom:5,
+},
+squareImage:{
+    width:100,
+    height:100,
+    borderRadius:50,
+},
+blogPreview__buttonContainer:{
+    // flexDirection:'row',
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center',
+},
+blogPreview__button:{
+    backgroundColor:'black',
+    padding:10,
+    borderRadius:10,
+},
+blogPreview__buttonText:{
+    color:'white',
+    fontSize:16,
+    textAlign:'center',
+
+},
+profile__name:{
+  fontSize:20,
+  fontWeight:'bold',
+  color:'black',
+  marginBottom:10,
+},
      
 
 })

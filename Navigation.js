@@ -13,6 +13,7 @@ import ReEnterEmail from "./ReEnterEmail";
 import ConfirmSignUp from "./ConfirmSignUp";
 import Login from "./Login";
 import TabNav from "./TabNav";
+import BlogPreview from "./BlogPreview";
 const Stack = createNativeStackNavigator();
 export default function Navigation()
 {
@@ -28,6 +29,7 @@ export default function Navigation()
                 
                 <Stack.Screen name="ConfirmSignUp" component={ConfirmSignUp} />
                 <Stack.Screen name="TabNav" component={TabNav} />
+                <Stack.Screen name="NoticationAdmin" component={BlogPreview} />
 
             </Stack.Navigator>
         </NavigationContainer>

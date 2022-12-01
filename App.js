@@ -10,12 +10,15 @@ import ReEnterEmail from './ReEnterEmail';
 import ResetPassword from './ResetPwd';
 import ConfirmSignUp from './ConfirmSignUp';
 import Navigation from './Navigation';
+import BlogPreview from './BlogPreview';
+import ViewProfile from './ViewProfile';
 
   const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <Navigation/>
+     <Navigation/>
+   
   );
 }
 
